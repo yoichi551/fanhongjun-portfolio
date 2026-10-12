@@ -1,0 +1,93 @@
+# ============================================================
+# 通用 .gitignore 模板 —— 适用于 Python / VSCode / Windows 环境
+# 作者: 樊泓俊 (5801126004)
+# 专业: 过程装备与控制工程
+# ============================================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+*.whl
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ---------- 虚拟环境 ----------
+venv/
+env/
+.venv/
+ENV/
+.env/
+
+# ---------- IDE / 编辑器 ----------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+.idea/
+*.swp
+*.swo
+*~
+
+# PyCharm
+.mypy_cache/
+
+# ---------- 操作系统 ----------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ---------- 日志与临时文件 ----------
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.pid
+*.seed
+
+# ---------- Jupyter Notebook ----------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---------- 测试与覆盖率 ----------
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+coverage.xml
+*.cover
+
+# ---------- 敏感信息（千万不要提交到公开仓库！） ----------
+*.env
+.env
+.env.local
+secrets/
+config.ini
+*.pem
+*.key
+
+# ---------- 大文件 ----------
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.iso
